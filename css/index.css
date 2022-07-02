@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1F1D36;
+    /* color: #ECB365; */
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.portfolio{
+    display: flex;
+    
+}
+
+.navbar{
+    padding: 35px 0 0 35px;
+    flex-basis: 0;
+    flex-grow: 0.55;
+    height: 100vh;
+}
+
+.nav-heading{
+    font-size: 40px;
+    font-weight:700;
+}
+
+#dot{
+    color: red;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    
+}
+
+.nav-link:hover{
+    color: #ECB365;
+
+}
+
+.nav-icon{
+    color: #ECB365;
+}
+
+.nav-div ul li{
+    margin-bottom: 25px;
+    list-style: none;
+}
+
+.nav-list:hover{
+    padding-left: 10px;
+}
+
+.nav-div > ul > li:hover{
+    color: red;
+}
+
+.nav-div ul{
+    margin-top:130px ;
+}
+
+.footer{
+    position: absolute;
+    bottom: 20px;
+}
+
+.verticle-line{
+    width: 1px;
+    height: 100%;
+    background-color: #5a5a5b;
+    position: absolute;
+    top: 0;
+    left: 300px;
+    
+}
+.content{
+    flex-basis: 0;
+    flex-grow: 2;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.profile{
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: 15px;
+
+}
+
+.profile-name{
+    padding: 12px 0;
+    font-size: 36px;
+}
+
+.bio-text{
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+
+}
+
+.social-container{
+    margin-bottom: 20px;
+}
+
+.social-icons{
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-icons:hover{
+    color: #ECB365;
+
+}
+
+.home, .contact{
+    text-align: center;
+    margin-top: 210px;
+    margin-bottom: 80px;
+    
+}
+
+.home-scrollbar{
+ margin-top: 80px;
+ margin-bottom: 10px;
+}
+
+.mouse-icon{
+    color: white;
+}
+
+.hireme-btn{
+    background-color: red;
+    color: white;
+    padding:10px 30px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.hireme-btn:hover{
+    padding:8px 28px ;
+}
+
+.cv-btn{
+    margin: 20px 0px;
+}
+
+.about{
+    padding: 110px 70px ;
+}
+
+.dark-bg{
+    background-color:#100d30;
+    padding: 35px;
+    border-radius: 25px;
+    line-height: 1.5;
+}
+
+.contact-head{
+ font-size: 50px;
+ padding: 20px 0;
+}
+
+.contact-desc{
+    padding: 0px 250px 12px 250px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.sayhello-btn{
+    font-size: 15px;
+    padding:14px 30px;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    background-color: red;
+    color: white;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.spacing{
+    height: 40px;
+}
+
+.spacing1{
+    height: 80px;
+}
+
+.stats{
+    padding: 40px 60px;
+}
+
+.stats-icon{
+    font-size: 36px;
+}
+
+.stats-head{
+ font-size: 30px;
+}
+
+.experience{
+    padding: 110px 55px ;
+}
+
+.experience-title, .certificate-title, .blog-title, .works-title{
+    font-size: 36px;
+}
+
+.exp{
+    padding-left: 80px;
+}
+
+.exp1{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.exp-vline{
+    width: 1px;
+    position: absolute;
+    background-color: red;
+    top: 20px;
+    bottom: 20px;
+    left: 50px;
+}
+
+.timeline::before{
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: red;
+    position: absolute;
+    display: block;
+    top: 7px;
+    left: -12%;
+}
+
+.certificate, .blog, .works{
+    padding: 110px 55px ;
+}
+
+.cert-img{
+    height: 100%;
+    width: 100%;
+}
+
+.card{
+    background-color: #100d30;
+    border-radius: 20px;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-title{
+    padding: 15px 15px 0px 15px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card-desc{
+    padding: 5px 15px 15px 15px;
+
+}
+
+.work-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
