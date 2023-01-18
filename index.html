@@ -13,6 +13,7 @@
 
 <body>
         <main>
+
                 <div class="portfolio">
                         <nav class="navbar">
 
@@ -50,6 +51,12 @@
                                 </div>
                         </nav>
                         <div class="verticle-line"></div>
+                        <div id="modal">
+                                <div class="modal-content">
+                                        <span class="modal-close">&times;</span>
+                                        <img id="modal-img" src="" />
+                                </div>
+                        </div>
                         <div class="content">
                                 <div id="home"></div>
                                 <div class="home">
@@ -79,7 +86,7 @@
                                         <div class="spacing"></div>
                                         <div class="row">
                                                 <div class="col-md-3">
-                                                        <img class="profile" src="./profile.jfif" />
+                                                        <img class="profile" src="./assets/profile.jfif" />
                                                 </div>
                                                 <div class="col-md-9 dark-bg">
                                                         <div class="row">
@@ -89,7 +96,7 @@
                                                                                 interactive experience and functional
                                                                                 interfaces using React, Nodejs and
                                                                                 Mongodb</p>
-                                                                        <a href="./certificates/mycv.pdf"
+                                                                        <a href="./certificates/SonaRawka CV Web-developer.pdf"
                                                                                 target="_blank"><button
                                                                                         class="hireme-btn cv-btn">Download
                                                                                         CV</button></a>
@@ -209,62 +216,54 @@
                                 <div class="certificate" id="certificate">
                                         <h2 class="certificate-title">Certifications</h2>
                                         <div class="spacing1"></div>
+
                                         <div class="row">
                                                 <div class="col-md-4 my-2">
-                                                        <a href="./certificates/awspractitionerexam.jpg"
-                                                                target="_blank">
-                                                                <img class="cert-img"
-                                                                        src="./certificates/awspractitionerexam.jpg"
-                                                                        alt="certificate1">
-                                                        </a>
-                                                </div>
-                                                <div class="col-md-4 my-2">
-                                                        <a href="./certificates/awssa.jpg" target="_blank">
-                                                                <img class="cert-img" src="./certificates/awssa.jpg"
-                                                                        alt="certificate1">
-                                                        </a>
 
+                                                        <img class="cert-img modal-open"
+                                                                src="./certificates/awspractitionerexam.jpg"
+                                                                alt="certificate1">
 
                                                 </div>
                                                 <div class="col-md-4 my-2">
-                                                        <a href="./certificates/certificate1.png" target="_blank">
-                                                                <img class="cert-img"
-                                                                        src="./certificates/UC-f4f60ce1-ace6-4a63-ab68-dbfbb656598d.jpg"
-                                                                        alt="certificate1">
-                                                        </a>
+
+                                                        <img class="cert-img modal-open"
+                                                                src="./certificates/awspractitionerexam.jpg"
+                                                                alt="certificate1">
+
+                                                </div>
+                                                <div class="col-md-4 my-2">
+
+                                                        <img class="cert-img modal-open"
+                                                                src="./certificates/awspractitionerexam.jpg"
+                                                                alt="certificate1">
 
                                                 </div>
                                         </div>
-                                        <!-- <div class="row">
+                                        <div class="row">
                                                 <div class="col-md-4 my-2">
-                                                        <a href="./certificates/UC-f4f60ce1-ace6-4a63-ab68-dbfbb656598d.jpg"
-                                                                target="_blank">
-                                                                <img class="cert-img"
-                                                                        src="./certificates/UC-f4f60ce1-ace6-4a63-ab68-dbfbb656598d.jpg"
-                                                                        alt="certificate1">
-                                                        </a>
+
+                                                        <img class="cert-img modal-open"
+                                                                src="./certificates/awspractitionerexam.jpg"
+                                                                alt="certificate1">
 
                                                 </div>
 
                                                 <div class="col-md-4 my-2">
-                                                        <a href="./certificates/UC-f4f60ce1-ace6-4a63-ab68-dbfbb656598d.jpg"
-                                                                target="_blank">
-                                                                <img class="cert-img"
-                                                                        src="./certificates/UC-f4f60ce1-ace6-4a63-ab68-dbfbb656598d.jpg"
-                                                                        alt="certificate1">
-                                                        </a>
+
+                                                        <img class="cert-img modal-open"
+                                                                src="./certificates/awspractitionerexam.jpg"
+                                                                alt="certificate1">
 
                                                 </div>
                                                 <div class="col-md-4 my-2">
-                                                        <a href="./certificates/UC-f4f60ce1-ace6-4a63-ab68-dbfbb656598d.jpg"
-                                                                target="_blank">
-                                                                <img class="cert-img"
-                                                                        src="./certificates/UC-f4f60ce1-ace6-4a63-ab68-dbfbb656598d.jpg"
-                                                                        alt="certificate1">
-                                                        </a>
+
+                                                        <img class="cert-img modal-open"
+                                                                src="./certificates/UC-f4f60ce1-ace6-4a63-ab68-dbfbb656598d.jpg"
+                                                                alt="certificate1">
 
                                                 </div>
-                                        </div> -->
+                                        </div>
                                 </div>
 
                                 <div class="experience" id="experience">
@@ -279,17 +278,30 @@
                                                                         <h3>TATA CONSULTANCY SERVICES</h3>
                                                                         <p> Commonwealth Bank of Australia | Murex3.1
                                                                         </p>
+                                                                        <br />
                                                                         <ul>
-                                                                                <li>Experience in MUREX 3.1, running End
-                                                                                        of Day (EOD) procedures</li>
-                                                                                <li>Automation, report generation,
-                                                                                        Datamart assistance, trade
-                                                                                        query, Team work.</li>
-                                                                                <li>Troubleshooting EOD issues, feeder
-                                                                                        failure, overflows etc.</li>
-                                                                                <li>Knowledge in SQL, UNIX, AWS.
-                                                                                        Presently working in Murex
-                                                                                        Environment Support</li>
+                                                                                <li>Working in CBA as a part of Murex
+                                                                                        Technical Analyst, running End
+                                                                                        of Day (EOD)
+                                                                                        on development and staging
+                                                                                        environments </li>
+                                                                                <li>designing of web page, report
+                                                                                        generation, automation, Datamart
+                                                                                        assistance, trade query, Team
+                                                                                        work</li>
+
+                                                                                <li>AWS stack deployment using
+                                                                                        CloudFormation, running EOD in
+                                                                                        AWS cloud etc.</li>
+                                                                                <li>Fixing service issues like MRE, TDS,
+                                                                                        Amber, XVA, BSMT, XCOM etc </li>
+                                                                                <li>Deploying new stack and new
+                                                                                        environments in cloud using git,
+                                                                                        Teamcity and
+                                                                                        Octopus CICD pipelines.</li>
+                                                                                <li>Knowledge in JavaScript, React,
+                                                                                        HTML, CSS, AWS, Murex, GitHub,
+                                                                                        Unix, SQL</li>
                                                                         </ul>
                                                                 </div>
 
@@ -337,22 +349,35 @@
                                         <div class="spacing"></div>
                                         <div class="row">
                                                 <div class="col-md-4 my-2">
-                                                        <img class="work-img" src="./assets/2.svg" alt="">
+                                                        <a href="./works/gupshup.html">
+                                                        <img class="work-img" src="./assets/gupshup.png" alt="">
+                                                        <p class="work-title">Gupshup App</p>
+                                                </a>
                                                 </div>
                                                 <div class="col-md-4 my-2">
-                                                        <img class="work-img" src="./assets/2.svg" alt="">
+                                                        <a href="./works/moviedb.html">
+
+                                                        <img class="work-img" src="./assets/moviedb.png" alt="">
+                                                        <p class="work-title">Moviedb</p>
+                                                        </a>
+
                                                 </div>
                                                 <div class="col-md-4 my-2">
-                                                        <img class="work-img" src="./assets/2.svg" alt="">
+                                                        <a href="./works/myntrav2.html">
+
+                                                        <img class="work-img" src="./assets/myntrav2.png" alt="">
+                                                        <p class="work-title">MyntraV2</p>
+                                                        </a>
+
                                                 </div>
                                                 <!-- <div class="col-md-4 my-2">
-                                                        <img class="work-img" src="./2.svg" alt="">
+                                                        <img class="work-img" src="./assets/gupshup.png" alt="">
                                                 </div>
                                                 <div class="col-md-4 my-2">
-                                                        <img class="work-img" src="./2.svg" alt="">
+                                                        <img class="work-img" src="./assets/gupshup.png" alt="">
                                                 </div>
                                                 <div class="col-md-4 my-2">
-                                                        <img class="work-img" src="./2.svg" alt="">
+                                                        <img class="work-img" src="./assets/gupshup.png" alt="">
                                                 </div> -->
                                         </div>
                                 </div>
@@ -393,7 +418,8 @@
                                         <p class="contact-desc">I’m currently looking for new
                                                 opportunities. If you have a question or
                                                 just want to say hi, my inbox is always open.</p>
-                                        <a href="mailto:sonarawka5@gmail.com"><button class="sayhello-btn">Say Hello</button></a> 
+                                        <a href="mailto:sonarawka5@gmail.com"><button class="sayhello-btn">Say
+                                                        Hello</button></a>
 
                                 </div>
 
@@ -402,8 +428,10 @@
                 </div>
 
 
+
         </main>
         <script src="/js/script.js"></script>
+
 </body>
 
 </html>

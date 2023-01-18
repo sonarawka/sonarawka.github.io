@@ -37,3 +37,27 @@ function deletingEffect() {
 };
 
 typingEffect();
+
+const modalOpen = document.querySelectorAll('.modal-open')
+const modalClose = document.getElementsByClassName('modal-close')[0]
+const modal = document.getElementById('modal')
+modalOpen.forEach((e)=>{
+	e.onclick = function(){
+		modal.style.display = "block";
+		document.getElementById('modal-img').src = e.currentSrc;
+		
+	}
+	window.onclick = function(event){
+		if(event.target==modal){
+			modal.style.display = "none";
+		}
+	}
+	
+	modalClose.onclick=()=>{
+		modal.style.display = "none";
+	
+	}
+})
+
+
+
