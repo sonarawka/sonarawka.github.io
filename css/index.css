@@ -332,3 +332,7 @@ body{
 .content-desc{
     text-align: justify;
 }
+
+.content-img{
+    width: 100%;
+}
