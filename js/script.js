@@ -78,7 +78,8 @@ menuIcon.onclick = function(){
 const menuNavList = document.getElementById('menu-navbar')
 menuNavList.onclick= function(){
 	document.getElementById('menu-navbar').style.display="none"
-	
+	menuIcon.classList.add('fa-bars')
+	menuIcon.classList.remove('fa-xmark')
 }
 
 

@@ -24,6 +24,10 @@ body{
     display: block;
     background-color: #1F1D36 !important;
     width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+
 }
 
 .menu-bar{
@@ -31,9 +35,6 @@ body{
     justify-items: center;
     align-items: center;
     column-gap: 5px;
-    position: absolute !important;
-    top: 0;
-    z-index: 1;
     background-color: #1F1D36 !important;
 
 }
@@ -120,7 +121,7 @@ body{
         display: none;
     }   
     .menu-bar{
-        display: block;
+        display: flex;
     }
   }
  
