@@ -59,5 +59,27 @@ modalOpen.forEach((e)=>{
 	}
 })
 
+const menuIcon = document.getElementById("menu-icon")
+menuIcon.onclick = function(){
+	if(menuIcon.classList.contains('fa-bars')){
+		menuIcon.classList.remove('fa-bars')
+		menuIcon.classList.add('fa-xmark')
+		document.getElementById('menu-navbar').style.display="block"
+	}
+	else{
+		menuIcon.classList.add('fa-bars')
+		menuIcon.classList.remove('fa-xmark')
+		document.getElementById('menu-navbar').style.display="none"
+
+	}
+	
+}
+
+const menuNavList = document.getElementById('menu-navbar')
+menuNavList.onclick= function(){
+	document.getElementById('menu-navbar').style.display="none"
+	
+}
+
 
 

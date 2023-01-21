@@ -20,19 +20,44 @@ body{
     
 }
 
+.menu-bar-div{
+    display: block;
+    background-color: #1F1D36 !important;
+    width: 100%;
+}
+
 .menu-bar{
     display: none;
     justify-items: center;
     align-items: center;
     column-gap: 5px;
+    position: absolute !important;
+    top: 0;
+    z-index: 1;
+    background-color: #1F1D36 !important;
+
 }
 
+#menu-icon{
+    padding: 3px;
+    font-size: 20px;
+}
 
 
 .menu-bar img{
     border-radius: 50%;
     width: 35px;
     height: 35px;
+}
+
+#menu-navbar{
+    display: none;
+    margin-left: 70px;
+}
+
+.menu-nav-list{
+    list-style: none;
+    margin-top: 10px;
 }
 
 
@@ -95,9 +120,11 @@ body{
         display: none;
     }   
     .menu-bar{
-        display: flex;
+        display: block;
     }
   }
+ 
+ 
 
 .verticle-line{
     width: 1px;
@@ -443,3 +470,9 @@ body{
     font-size: 20px;
     
 }
+
+@media only screen and (min-width: 480px) {
+    #menu-navbar{
+        display: none !important;
+    }
+  }
