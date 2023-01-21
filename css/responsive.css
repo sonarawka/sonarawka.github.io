@@ -96,10 +96,10 @@
     }
   }
   .mx-1{
-    margin: 10px 0;
+    margin: 0 10px !important; 
   }
   .mx-2{
-    margin: 20px 0;
+    margin: 0 20px !important;
   }
 
   .progress {
@@ -200,4 +200,8 @@
 .bg-white {
 	--bs-bg-opacity: 1;
 	background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important
+}
+
+.mb-3 {
+	margin-bottom: 1rem !important
 }

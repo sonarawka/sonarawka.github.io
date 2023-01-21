@@ -14,10 +14,27 @@ body{
     font-family: 'Rubik', sans-serif;
 }
 
+
 .portfolio{
     display: flex;
     
 }
+
+.menu-bar{
+    display: none;
+    justify-items: center;
+    align-items: center;
+    column-gap: 5px;
+}
+
+
+
+.menu-bar img{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
 
 .navbar{
     padding: 35px 0 0 35px;
@@ -73,6 +90,15 @@ body{
     bottom: 20px;
 }
 
+@media only screen and (max-width: 480px) {
+    .navbar{
+        display: none;
+    }   
+    .menu-bar{
+        display: flex;
+    }
+  }
+
 .verticle-line{
     width: 1px;
     height: 100%;
@@ -82,6 +108,12 @@ body{
     left: 300px;
     
 }
+
+@media only screen and (max-width: 1050px) {
+    .verticle-line{
+        display: none;
+    }
+    }
 .content{
     flex-basis: 0;
     flex-grow: 2;
@@ -150,6 +182,7 @@ body{
     cursor: pointer;
 }
 
+
 .hireme-btn:hover{
     padding:8px 28px ;
 }
@@ -162,11 +195,40 @@ body{
     padding: 110px 70px ;
 }
 
+.aboutme-stats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10%;
+}
+
+.aboutme-stats>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    margin:20px 0;
+}
+
+@media only screen and (max-width: 1050px) {
+    .aboutme-stats{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    }
+
 .dark-bg{
     background-color:#100d30;
     padding: 35px;
     border-radius: 25px;
     line-height: 1.5;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-head{
@@ -175,9 +237,9 @@ body{
 }
 
 .contact-desc{
-    padding: 0px 250px 12px 250px;
     font-size: 20px;
     line-height: 30px;
+    width: 65%;
 }
 
 .sayhello-btn{
@@ -202,6 +264,11 @@ body{
     height: 80px;
 }
 
+.spacing2{
+    height: 60px;
+
+}
+
 .stats{
     padding: 40px 60px;
 }
@@ -214,12 +281,34 @@ body{
  font-size: 30px;
 }
 
-.experience{
+.resume{
     padding: 110px 55px ;
 }
 
-.experience-title, .certificate-title, .blog-title, .works-title{
+.resume-title, .certificate-title, .blog-title, .works-title{
     font-size: 36px;
+}
+
+.resume-subtitle{
+    font-weight: bold;
+    color: rgb(164, 162, 162);
+}
+
+.resume-list{
+    list-style-position: inside;
+    color: rgb(164, 162, 162);
+
+}
+
+
+.resume-list li{
+    padding-left: 1.5rem;
+    text-indent: -1.4rem
+}
+
+.education-desc{
+    color: rgb(164, 162, 162);
+
 }
 
 .exp{
@@ -295,8 +384,7 @@ body{
 }
 
 .cert-img{
-    height: 240px;
-    width: 340px;
+    width: 100%;
     cursor: pointer;
 }
 
@@ -327,6 +415,12 @@ body{
 
 .work-title{
     text-align: center;
+    color: white;
+}
+
+.work-link{
+    text-decoration: none;
+
 }
 
 .content-desc{
@@ -335,4 +429,15 @@ body{
 
 .content-img{
     width: 100%;
+}
+
+.leftarrow-icon{
+    cursor: pointer;
+    font-size: larger;
+    color: white;
+}
+
+.back-btn{
+    font-weight: bold;
+    font-size: 20px;
 }
