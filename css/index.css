@@ -435,9 +435,11 @@ body{
     cursor: pointer;
     font-size: larger;
     color: white;
+    text-decoration: none;
 }
 
 .back-btn{
     font-weight: bold;
     font-size: 20px;
+    
 }
